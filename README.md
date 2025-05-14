@@ -6,21 +6,11 @@
 
 ---
 
-## 🎯 Project motivation
+## 🎯 Project Understanding
 
-### Understanding Geo beyond its user interface
+### Understanding Geo 
 
-Until now, my interaction with Geo has mostly been through its interface. With this project, I want to go further by interacting with **Geo Testnet programmatically**, using the API and publishing structured data on the blockchain.
-
-### Experimenting with a concrete application of GRC-20
-
-I have been exploring **GRC-20** since its release on **November 21, 2024**, and this project is the ideal opportunity to test its potential in a real-world use case. By integrating **press releases into Geo**, I want to understand how to **structure, store, and efficiently query data** using this standard.
-
-### Building on my work with RSS feeds
-
-
-
-### Automating press release collection and publishing
+This project gave me an exposure to the graph protocol grc-20, I have only being able to interact with the graph protocol using the user interface, but the project gave me an indepth understanding of the protocol and the ability to publish data and scraped data from external source.
 
 
 
@@ -30,10 +20,10 @@ I have been exploring **GRC-20** since its release on **November 21, 2024**, and
 
 ### 📌 Initial setup
 
-🔹 Investigated **documentation hackathon**\
-🔹 Created the **Chainwire RSS scraper** → `scraper.ts`\
-🔹 Deployed the **Armando RSS space** on **Geo Testnet** → `NCdYgAuRjEYgsRrzQ5W4NC`\
-🔹 Received **Testnet tokens** on *03/05/2025*
+🔹 Studied **[grc-20-ts](https://github.com/graphprotocol/grc-20-ts)**\
+🔹 Created the **Restaurant data** from [San Francisco Open Data – Restaurant Inspection Scores](https://data.sfgov.org/resource/pyih-qa8i.json) → `restaurant.ts`\
+🔹 Published the **data scraped** on **Geo Testnet** → 
+
 
 ### 🛠️ Technologies
 
@@ -65,58 +55,45 @@ This avoids rate limits and private APIs, making it fully open-source friendly.
 
 ## ❌ Challenges & issues
 
-⚠ **Failed to delete an entity** 
+⚠ **I could not access the grc-20 browser fully** 
 
 
 ---
 
 ## ✅ Key learnings
 
-### 📌 Technical improvements
+
 
 ### 📌 Geo-Specific learnings
 
 ✔ **Deeper understanding** of **Geo's data publishing process**\
-✔ Learned how to **write and publish structured data** using the **Geo Testnet API**\
-✔ Understood how **triples, entities, and relationships work programmatically**
-
----
-
-## 📌 Important project IDs 
-
-
+✔ Learned how to **scarpe and publish structured data** using the **Geo Testnet API**\
 
 ---
 
 
 
 
-## 📄 Data model: Press release
-
-| Property         | Geo ID                 | Description                                       |
-| ---------------- | ---------------------- | ------------------------------------------------- |
-| **Name**         | LuBWqZAu6pz54eiJS5mLv8 | The title of the press release                    |
-| **Publish Date** | KPNjGaLx5dKofVhT6Dfw22 | The publication date and time                     |
-| **Web URL**      | 93stf6cgYvBsdPruRzq1KK | The original link to the press release            |
-| **Blocks**       | QYbjCM6NT9xmh2hFGsqpQX | The content of the press release stored in Blocks |
-| **Publisher**    | Lc4JrkpMUPhNstqs7mvnc5 | The wire service publishing the press release     |
-
 ---
+
 
 ## 📂 Project structure
 
 ```
-Armando-RSS/
-│── data/
+RESTAURANT-GRC-20
 │── src/
-│   ├── scraper.ts
-│   ├── scraper-v2.ts
-│   ├── publisher.ts
-│   ├── testnet.ts
-│   ├── wallet.ts
+│   ├── data  
+│        ├──restaurant.ts
+│   ├── publisher
+│        ├──publish.ts
+│   ├── types
+│        ├──types.ts
+│   ├── utils
+│          ├──ipfsUpload.ts
+│         ├──metadata.ts
+│         ├──wallet.ts
 │   ├── config.ts
-│   ├── write-*.ts
-│   ├── publish-*.ts
+│   ├── index.ts
 │   ├── deploy-space.ts
 │── package.json
 │── tsconfig.json
@@ -125,12 +102,4 @@ Armando-RSS/
 
 ---
 
-## 📌 Next steps
 
-🛠️ **Improving content publication in Blocks**\
-🖨️ **Format press release names** for consistency with **Geo policies**\
-🔄 **Refining relation management** for structured data\
-🚀 **Transitioning from Testnet to Mainnet deployment**\
-🔮 **Becoming able to publish any content on Geo Genesis with full control over Blocks, tables, and images**
-
----
