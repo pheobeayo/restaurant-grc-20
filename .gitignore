@@ -1,0 +1,21 @@
+# Exclude all publish files except those to keep
+src/publish-*.ts
+!src/publish-test-v2.ts
+!src/publish-test-v7.ts
+!src/publish-properties.ts
+!src/publish-pro-v2.ts
+!src/publish-press-release-v2.ts
+!src/publish-fuu.ts
+
+# Exclude unnecessary folders and files
+node_modules/
+dist/
+out/
+*.log
+.DS_Store
+.env
+pnpm-lock.yaml
+
+# Exclure les fichiers de configuration inutiles
+.vscode/
+.idea/

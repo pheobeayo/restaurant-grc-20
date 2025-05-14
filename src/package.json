@@ -1,0 +1,23 @@
+{
+  "name": "clone-space",
+  "module": "main.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --project src/tsconfig.json",
+    "start": "ts-node src/main.ts",
+    "run-triples": "ts-node --esm src/write-triples.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@graphprotocol/grc-20": "^0.6.1",
+    "viem": "^2.23.2"
+  }
+}
