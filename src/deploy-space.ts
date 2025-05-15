@@ -37,7 +37,7 @@ async function deploySpace() {
     const json = JSON.parse(text);
     console.log("🎉 Space deployed successfully!");
     console.log("🔑 SPACE_ID:", json.spaceId);
-    console.log("💡 Add this to your .env:\n\nSPACE_ID=" + json.spaceId);
+    console.log("💡 Add this to your .process.env.SPACE_ID=" + json.spaceId);
   } catch (err) {
     console.error("❌ Failed to parse response:", text);
   }
