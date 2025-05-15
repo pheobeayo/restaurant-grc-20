@@ -28,10 +28,15 @@ This project gave me an exposure to the graph protocol grc-20, I have only being
 ### 🛠️ Technologies
 
 🔹 Node.js / TypeScript
+
 🔹 `axios` for HTTP requests
+
 🔹 `dotenv` for environment management
+
 🔹`grc20-ts` for interacting with the Geo Protocol
-🔹 Yelp Fusion API
+
+🔹 `San Francisco Open Data` for public data 
+
 
 ### 🔧 Setup Instructions
 
