@@ -30,7 +30,7 @@
     "dotenv": "^16.4.7",
     "effect": "^3.12.11",
     "ethers": "^5.7.2",
-    "express": "^4.21.2",
+    "express": "^4.22.1",
     "form-data": "^4.0.2",
     "fs-extra": "^11.3.0",
     "ipfs-http-client": "^60.0.1",
